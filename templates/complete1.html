@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Placed</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+
+  <script src="/static/bootstrap/css/bootstrap.min.css" ></script>
+   <script src="/static/bootstrap/js/bootstrap.min.js" ></script>
+    <!-- <script src="" ></script>
+     <script src="" ></script>
+ -->
+</head>
+<style type="text/css">
+	#confirm{
+		font-family: cursive;
+		font-size: 25px;
+
+	}
+	#o{
+		font-size: 30px;
+		color: white;
+
+	}
+
+	
+	li a{
+		font-size: 25px;
+		font-style: cursive;
+	}
+
+	#car{
+		width: 450px;
+		height: 700px;
+	}
+	
+
+</style>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+	<div class="container-fluid" >
+		<div class="navbar-header" >
+			<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> -->
+			<!-- </button> -->
+
+			<a href="/home/" class="navbar-brand" style="font-size: 35px; color: white;">ClothingPress</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+		<ul class="nav navbar-nav">
+			<li><a href="/home/">Home</a></li>
+			<li><a href="/home/#track">Track</a></li>
+			<li><a href="/home/#order">Order</a></li>
+			<li><a href="/about/">About Us</a></li>
+			<li><a href="#contact_us">Contact</a></li>
+			<!-- <li><a href="" >Register</a></li> -->
+		</ul>
+		</div>
+		<!-- <form class="navbar-form navbar-right">
+
+			<div class="input-group">
+			<input type="text" class="form-control " placeholder="Search">
+				<div class="input-group-btn">
+					<button class="btn btn-default" type="submit">
+					<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</div>
+		</form> -->
+	</div>
+</nav>
+<br><br><br>
+<div class="container">
+<br><br>
+<div class="bg-danger">
+<center>
+<br>
+	<h3 id="o"><strong>Thanks </strong> for visiting us.Your ordered is Placed!!</h3>
+	<p id="confirm">Our team will be at your doorstep and collect your clothes.<p id="confirm">Your ID is 
+	<form>
+	<input type="hidden" name="Myid" id="Myid" value="">{{objec.your_id}}
+	</form></p>
+	</center>
+	<br>
+</div>
+</div>
+</body>
+</html>

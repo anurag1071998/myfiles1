@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get started</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+
+  <script src="/static/bootstrap/css/bootstrap.min.css" ></script>
+   <script src="/static/bootstrap/js/bootstrap.min.js" ></script>
+    <!-- <script src="" ></script>
+     <script src="" ></script>
+ -->
+</head>
+
+<style type="text/css">
+	
+	body, html{
+		height: 100%;
+		margin: 0;
+	}
+
+	.bg{
+		/*the image used*/
+		background-image: url("/static/img/back2.jpg");
+
+		/*full height*/
+		height: 100%;
+
+		/*center and scale the image nicely*/
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+	p{
+		font-size: 35px;
+		color: white;
+		margin-left: 10px;
+		margin-top: 25px;
+	}
+	.bg-primary{
+		margin-top: 450px;
+		width: 200px;
+		margin-left: 370px;
+		position: fixed;
+
+
+	}
+	a{
+		text-decoration: none;
+
+	}
+	p:hover{
+		color: black;
+	}
+
+	#get {
+   
+
+    /*-webkit-animation: myfirst 5s infinite; /* Safari 4.0 - 8.0 */*/
+    /*-webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */*/
+    /*animation: myfirst 5s infinite;*/
+    /*animation-direction: alternate;*/
+    /*margin-top: 450px;*/
+	/*width: 200px;*/
+	/*margin-left: 300px;*/
+	/*position: fixed;*/
+
+
+    width: 100px;
+    height: 100px;
+    /*background-color: coral;*/
+    color: white;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {box-shadow: 10px 20px 30px grey;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {box-shadow: 10px 20px 30px grey;}
+
+
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}*/
+</style>
+<body>
+<div class="bg">
+
+<div class="container">
+
+	<div class="bg-primary" id="get">
+		<a href="/home/"><p>Get Started</p></a>
+	</div>
+	<!-- <div id="animate">
+		<div id="animate">
+			<div id="animate">
+				
+			</div>
+		</div>
+	</div> -->
+
+
+</div>
+</div>
+</body>
+</html>

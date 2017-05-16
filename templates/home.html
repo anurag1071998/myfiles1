@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+        <!--=============== Meta and Title  ===============-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+		<!-- favicon icon -->			
+		<link rel="icon" type="image/png" href="/static/favicon.png"> 
+        <!--=============== Include all css file  ===============-->	
+		<link rel="stylesheet" href="/static/css/animate.css" media="all" />            <!-- Animate css -->
+		<link rel="stylesheet" href="/static/css/font-awesome.min.css" media="all" />   <!-- Font awesome css -->
+        <link rel="stylesheet" href="/static/css/font-sourch_sun_pro.css"/>             <!-- Font css -->		
+        <link rel="stylesheet" href="/static/css/slicknav.css"/>	 					<!-- Slicknav css -->
+		<link rel="stylesheet" href="/static/css/bootstrap.min.css"/>  					<!-- Bootstrap -->
+        <link rel="stylesheet" href="/static/css/owl.carousel.css">	   					<!-- carousel css -->
+        <link rel="stylesheet" href="/static/css/owl.theme.css">   						<!-- Owl theme css -->			
+		<link rel="stylesheet" href="/static/css/reset.css"/>						 	<!-- Recet css -->
+		<link rel="stylesheet" href="/static/switcher/switcher.css"/>					<!-- Switcher css -->				
+		<link rel="stylesheet" href="/static/css/style1.css"/>							<!-- Style css -->
+		<link rel="stylesheet" href="/static/css/responsive.css" media="all" />			<!-- Responsive css -->
+		<link rel="stylesheet" href="/static/css/preloder.css" media="all" />			<!-- Preloder css -->
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+		<style type="text/css">
+			a:hover{
+				text-decoration:none;
+			}
+			img{
+				margin:100px 20px 20px 20px;
+			}
+			h4:hover{
+				underline:none;
+			}
+
+			p{
+				font-style: cursive;
+				font-size: 30px;
+				color: black;
+			}
+			p:hover{
+				color: green;
+								
+			}
+			/*button:hover{
+				color:pink;
+			}*/
+		</style>
+	</head>
+	<body>
+		<!-- loader-wrapper -->		
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+		</div>
+		<!-- end loader-wrapper -->	
+		<!-- canvas -->			
+		<div id="canvas-holder">
+			<canvas id="demo-canvas"></canvas>
+		</div>
+
+	
+		<div class=""> <!-- Home area-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="image_background">
+							<a href="index1.html"><img src="/static/images/image_background.png" alt="" /></a>
+							<a href="index1.html"><h4>Image Background</h4></a>
+						</div>	
+					</div>
+					<div class="col-sm-6">
+						<div class="pattern_background">
+							<a href="index2.html"><img src="/static/images/pattren_background.png" alt="" /></a>
+							<a href="index2.html"><h4>Pattern Background</h4></a>
+						</div>	
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<br><br><br><br>
+		<a href="/home/"><button class="btn btn-info"><p>Get Started</p></button>  </a>
+		
+<!--
+##  javascript All file include
+=============================================================================== -->			
+		
+		<script src="/static/js/jquery-1.9.1.min.js"></script>	              	<!-- Main js file -->
+		<script src="/static/js/custom.js"></script>						   	<!-- Custom js file -->	
+		<script src="/static/js/form-contact.js"></script>						<!-- form-contact js file -->
+		<script src="/static/js/jquery.slicknav.min.js"></script>				<!-- Slicknav js file -->
+		<script src="/static/js/bootstrap.min.js"></script>						<!-- Bootstrap js file -->
+		<script src="/static/js/owl.carousel.min.js"></script>					<!-- Carousel js file -->
+		<script src="/static/js/canvas.js"></script>     						<!-- canvas js file -->  	
+		<script src="/static/js/jquery.ajaxchimp.min.js"></script>				<!-- Ajaxchimp js file -->
+		<script src="switcher/switcher.js"></script>					<!-- Switcher js file -->
+		<script type="text/javascript">
+			jQuery('document').ready(function() {
+					
+				$(".image_background").hover(function() {
+					$(".image_background img").show(0).addClass('animated  pulse');
+					$(".image_background h4").show(0).addClass('animated flipInY');
+				});							
+				
+				$(".image_background").mouseleave(function() {
+					$(".image_background img").removeClass('pulse');
+					$(".image_background h4").removeClass('flipInY');
+				});	
+				
+				$(".pattern_background").hover(function() {
+					$(".pattern_background img").show(0).addClass('animated pulse');
+					$(".pattern_background h4").show(0).addClass('animated flipInY');
+				});							
+				
+				$(".pattern_background").mouseleave(function() {
+					$(".pattern_background img").removeClass('pulse');
+					$(".pattern_background h4").removeClass(' flipInY');
+				});	
+			});
+		</script>
+
+	</body>
+</html>

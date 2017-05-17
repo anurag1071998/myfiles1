@@ -5,3 +5,4 @@ from .models import *
 admin.site.register(StateMaster)
 admin.site.register(CityMaster)
 admin.site.register(CreateOrder)
+admin.site.register(Register)

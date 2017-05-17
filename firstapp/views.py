@@ -62,6 +62,7 @@ def trackorder(request):
 
 	else:
 		return redirect('/home/')
-
+def explore(request):
+	return render(request,'explore.html')
 	
 

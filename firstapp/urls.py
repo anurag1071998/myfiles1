@@ -10,4 +10,5 @@ urlpatterns = [
 	url(r'^about/',aboutus,name='aboutus'),
 	url(r'^register/',register,name='register'),
 	url(r'^tracked/',trackorder,name='track'),
+	url(r'^explore/',explore,name='explore'),
 ]
